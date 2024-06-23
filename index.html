@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <div class="search">
+                <input id="input_search" type="text" placeholder="enter city name" spellcheck="false">
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="weather">
+                <i class="fa-solid fa-cloud-sun fa-10x" id="weather-icon"></i>
+                <div class="temp-text">
+                    <p id="temp">22</p>
+                    <p><sup>O</sup>C</p>
+                </div>
+                <p id="city">New York</p>
+                <div class="details">
+                    <div class="cols">
+                        <i class="fa-solid fa-water fa-3x" style="color: blue;"></i>
+                        <div class="humidity">
+                            <p id="humidity-level">66%</p>
+                            <p id="Humidity">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <i class="fa-solid fa-wind fa-3x" style="color: coral;"></i>
+                        <div class="speed">
+                            <p id="wind-speed">18 km/h</p>
+                            <p id="WindSpeed">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
